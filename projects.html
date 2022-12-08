@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NIYA&SIMO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/png" href="images/favicon.png"/>           
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="Script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="images//logo.png" alt="logo"></a>
+        </header>
+        <div id="nav">
+            <div id="navbar">
+                <div class="under"><a href="index.html">HOME</a></div>
+                <div class="under"><a  href="about.html">ABOUT</a></div>
+                <div class="under"><a id="current" href="#">PROJECTS</a></div>
+                <div class="under"><a href="contact_us.html">CONTACT US</a></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {scrollFunc()};
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop + 170;
+
+            function scrollFunc() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <p class="headers" >MODULAR ARITHMETIC</p>
+        <p class="subheader">This was our first big project at UNI. It was a course work assigned by our programming professor. <br> We had to develop a modular calculator using C++. </p>
+
+        <p class="headers" >VECTORS</p>
+        <p class="subheader">Our second term course work included the develepmonet of a vector calculator also using C++. <br> This project was part of our Object-oriented programming course.</p>
+
+
+        <p class="headers">ROBOTICS</p>
+        <p class="subheader">During the first term of UNI we participated in a project called "ROBOTICS". <br>We both created robots more of which you can read below.</p>
+        <div class="content">
+            <div class="left both_sides" >
+                <img class="robot" src="images//niya_rob.jpg" alt="image">
+                <div id="right_all">
+                    <p class="names">Niya's "The Jocker"</p>
+                    <p>The robot THE JOKER is designed to perform the task of shuffling cards without outside interference.</p>
+                </div>
+            </div>
+            <div class="right both_sides">
+                
+                <div id="left_all">
+                    <p class="names">Simo's "Brick sorter"</p>
+                    <p>Our robot's aim was to sort bricks based on their color and size. The bricks went on assembly line and were then distributed to different boxes. </p>
+                </div>
+                <img  class="simo_PI robot" src="images//rob_simo.jpg" alt="image">
+            </div>
+        </div>
+
+        
+        <p class="headers" id="mod" >ADOBE ILLUSTRATOR PROJECTS</p>
+        <div class="content">
+            <div class="left both_sides" >
+                <img class="project_img_left" src="images//N_ADOBE1.png" alt="image">
+                <img class="project_img_left" src="images//N_ADOBE2.png" alt="image">
+                <img class="project_img_left" src="images//N_ADOBE3.png" alt="image">
+                <img class="project_img_left" src="images//N_ADOBE4.png" alt="image">
+                <img class="project_img_left" src="images//N_ADOBE5.png" alt="image">
+                <img class="project_img_left" src="images//N_ADOBE6.jpg" alt="image">
+                <img class="project_img_left" src="images//chuks.jpg" alt="image">
+                <img class="project_img_left" src="images//chichis.jpg" alt="image">
+
+            </div>
+            <div class="right both_sides">
+                <img class="project_img_right" src="images//ADOBE1.png" alt="image">
+                <img class="project_img_right" src="images//ADOBE2.png" alt="image">
+                <img class="project_img_right" src="images//ADOBE3.png" alt="image">
+                <img class="project_img_right" src="images//ADOBE4.png" alt="image">
+                <img class="project_img_right" src="images//ADOBE5.png" alt="image">
+                <img class="project_img_right" src="images//ADOBE6.jpeg" alt="image">
+                <img class="project_img_right" src="images//Billboard_SG.jpg" alt="image">
+                <img class="project_img_right" src="images//Surfs.jpeg" alt="image">
+            </div>
+        </div>
+        <div id="blank"></div>
+
+        <div class="footer">
+            <h3>Follow us on our social media.</h3>
+            <a href="https://www.facebook.com/ewgeniaa/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/ewgeniaaa/" class="fa fa-instagram"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100000694588313" class="fa fa-facebook" id="separate"></a>
+            <a href="https://www.instagram.com/simeongelovski/" class="fa fa-instagram"></a>
+            <hr>
+            <p>All rights reserved.</p>
+        </div>
+    </body>
+</html>

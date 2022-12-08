@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NIYA&SIMO</title>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <link rel="icon" type="image/png" href="images/favicon.png"/>    
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="Script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="images//logo.png" alt="logo"></a>
+        </header>
+        <div id="nav">
+            <div id="navbar">
+                <div class="under"><a href="index.html">HOME</a></div>
+                <div class="under"><a id="current" href="#">ABOUT</a></div>
+                <div class="under"><a href="projects.html">PROJECTS</a></div>
+                <div class="under"><a href="contact_us.html">CONTACT US</a></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {scrollFunc()};
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop + 170;
+
+            function scrollFunc() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <p class="headers">PERSONAL INFO</p>
+        <div class="content">
+            <div class=" left both_sides" >
+                <img src="images//niya.jpg" alt="niya">
+                <div>
+                    <p class="names">Evgenia Zaeva</p>
+                    <p>66 Al. Stamboliiski Str.<br> Pazardzik, Bulgaria</p>
+                    <p>02.06.2020</p>
+                </div>
+            </div>
+            <div class="right both_sides">
+                <img class="simo_PI" src="images//simo.jpeg" alt="simo">
+                <div>
+                    <p class="names">Simeon Gelovski</p>
+                    <p>103 Stefan Peshev Str.<br> Sevlievo, Bulgaria</p>
+                    <p>19.03.2020</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="headers">EDUCATION</p>
+        <div class="content">
+            <div class=" left both_sides" >
+                <div>
+                    <p>2014-2019: "Bertolt Brecht" Language School</p>
+                    <p class="spec">Intense learning of German & English</p>
+                    <br>
+                    <p>2019-present: New Bulgarian University</p>
+                    <p class="spec">Major: "Informatics", Minor: "Web Design"</p>
+                </div>
+            </div>
+            <div class=" right both_sides">
+                
+                <div>
+                    <p>2007-2019: Vasil Levski High School</p>
+                    <p class="spec">Intense learning of German & IT</p>
+                    <br>
+                    <p>2019-present: New Bulgarian University</p>
+                    <p class="spec">Major: "Informatics", Minor: "Web Design"</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="headers">LANGUAGE SKILLS</p>
+        <div class="content">
+            <div class=" left both_sides" >
+                <img src="images//lang_niya.jpg" alt="niya">
+                <div>
+                    <p class="lang">English</p>
+                    <p>Level: B2</p>
+                    <br>
+                    <p class="lang">German</p>
+                    <p>Level: C1</p>
+                </div>
+            </div>
+            <div class=" right both_sides">
+                <img class="simo_PI" src="images//lang_simo.jpeg" alt="simo">
+                <div>
+                    <p class="lang">English</p>
+                    <p>Level: C1</p>
+                    <br>
+                    <p class="lang">German</p>
+                    <p>Level: B2</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="headers">SOCIAL SKILLS</p>
+        <div class="content">
+            <div class="left both_sides" >
+                
+                <div>
+                    <ul class="skills" id="niya_skills">
+                        <li>Communication Sklls</li>
+                        <li>Teamworker</li>
+                        <li>Adaptability</li>
+                        <li>Conflict solving</li>
+                        <li>Adequate thinking</li>
+                    </ul>
+                </div>
+                <img src="images//niya_skills.jpg" alt="niyaskills">
+            </div>
+            <div class="right both_sides">
+                
+                <div>
+                    <ul class="skills" id="simo_skills">
+                        <li>Communication Sklls</li>
+                        <li>Positivity</li>
+                        <li>Teamworker</li>
+                        <li>Motivation</li>
+                        <li>Critical thinking</li>
+                    </ul>
+                </div>
+                <img class="simo_PI" src="images//simo_skills.jpeg" alt="logo">
+            </div>
+        </div>
+
+        <div id="blank"></div>
+
+        <div class="footer">
+            <h3>Follow us on our social media.</h3>
+            <a href="https://www.facebook.com/ewgeniaa/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/ewgeniaaa/" class="fa fa-instagram"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100000694588313" class="fa fa-facebook" id="separate"></a>
+            <a href="https://www.instagram.com/simeongelovski/" class="fa fa-instagram"></a>
+            <hr>
+            <p>All rights reserved.</p>
+        </div>
+    </body>
+</html>

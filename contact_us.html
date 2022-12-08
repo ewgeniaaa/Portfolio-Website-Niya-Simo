@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NIYA&SIMO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="icon" type="image/png" href="images/favicon.png"/>           
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="Script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="images//logo.png" alt="logo"></a>
+        </header>
+        <div id="nav">
+            <div id="navbar">
+                <div class="under"><a href="index.html">HOME</a></div>
+                <div class="under"><a  href="about.html">ABOUT</a></div>
+                <div class="under"><a  href="projects.html">PROJECTS</a></div>
+                <div class="under"><a  href="#">CONTACT US</a></div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {scrollFunc()};
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop + 170;
+
+            function scrollFunc() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+            
+        </script>
+
+        <p class="headers">CONTACTS</p>
+        <div class="content">
+            <div class="leftAllign both_sides">
+                <img class="niya_cont" src="images//niya_contact.jpg" alt="image">
+                <div class="niya_div">
+                    <p class="names">Evgenia Zaeva</p>
+                    <p>niya2000@abv.bg</p>
+                    <p>+359 882 717650</p>
+                    <a href="https://www.facebook.com/ewgeniaa/"> <img class="social" src="images//fb.png" alt="image"> </a>
+                    <a href="https://www.instagram.com/ewgeniaaa/"> <img class="social" src="images//insta.png" alt="image"> </a>
+                </div>
+            </div>
+            <div class="right both_sides">
+                <img class="simo_PI" src="images//simo_contact.jpeg" alt="image">
+                <div>
+                    <p class="names">Simeon Gelovski</p>
+                    <p>sgelovski@gmail.com</p>
+                    <p>+359 888 333379</p>
+                    <a href="https://www.facebook.com/profile.php?id=100000694588313"> <img class="social" src="images//fb.png" alt="image"> </a>
+                    <a href="https://www.instagram.com/simeongelovski/"> <img class="social" src="images//insta.png" alt="image"> </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="headers">E-MAIL US</p>
+        <div class="email_us">
+            <form action="#">
+
+            <fieldset class="form_main" id="pick_one">
+                <p>Contact: </p>
+                <select name='name'> 
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value='1'>Niya Zaeva</option> 
+                    <option value='2'>Simeon Gelovski</option> 
+                </select>
+            </fieldset>
+
+            <fieldset class="form_main">
+                <p>Your e-mail: </p>
+                <input id="y_email" type="text" name="YourEmail" placeholder='Type here'>
+            </fieldset>
+
+            <fieldset class="textA">
+                <textarea id="message" name="message" placeholder="Write here..." maxlength="500"></textarea>
+                <div id="the-count">
+                    <span id="current">0</span>
+                    <span id="maximum">/ 500</span>
+                </div>
+                <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                <script id="rendered-js">
+                    $('textarea').keyup(function () {
+                    
+                      var characterCount = $(this).val().length,
+                      current = $('#current'),
+                      maximum = $('#maximum'),
+                      theCount = $('#the-count');
+                    
+                      current.text(characterCount);
+                    });
+                </script>
+            </fieldset>
+            
+            <fieldset class="send">
+                <input id="sub" type="Submit" name='Submit' value="Send">
+            </fieldset>
+            </form>
+        </div>
+        
+        <div id="blank"></div>
+
+        <div class="footer">
+            <h3>Follow us on our social media.</h3>
+            <a href="https://www.facebook.com/ewgeniaa/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/ewgeniaaa/" class="fa fa-instagram"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100000694588313" class="fa fa-facebook" id="separate"></a>
+            <a href="https://www.instagram.com/simeongelovski/" class="fa fa-instagram"></a>
+            <hr>
+            <p><b id="copyright">©</b>2021 NIYA & SIMO</p>
+            <p>All rights reserved.</p>
+        </div>
+    </body>
+</html>
